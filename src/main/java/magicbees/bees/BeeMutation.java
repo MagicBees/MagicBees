@@ -498,7 +498,7 @@ public class BeeMutation implements IBeeMutation
 					conditions.add(String.format(LocalizationManager.getLocalizedString("research.requiresBlock"), ores.get(0).getDisplayName()));
 				}
 			}
-			else
+			else if (requiredBlock != null)
 			{
 				int meta = 0;
 				if (this.requiredBlockMeta != OreDictionary.WILDCARD_VALUE)
