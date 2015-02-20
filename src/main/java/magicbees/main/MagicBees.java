@@ -59,6 +59,8 @@ public class MagicBees
 	public void init(FMLInitializationEvent event)
 	{
 		ModHelper.init();
+		
+		BeeManager.ititializeBees();
 
 		LogHelper.info("Init completed");
 	}
@@ -72,8 +74,6 @@ public class MagicBees
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, this.guiHandler);
 
 		proxy.registerRenderers();
-
-		BeeManager.ititializeBees();
 
 		this.modConfig.saveConfigs();
 
