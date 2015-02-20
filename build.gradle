@@ -34,9 +34,9 @@ minecraft {
 }
     
 dependencies {
-	compile files("/libs/Thaumcraft-1.7.10-4.2.3.0.jar")
-    compile 'net.sengir.forestry:forestry_1.7.10:3.3.0.415-unstable:dev'
-	compile files("/libs/BloodMagic-1.7.10-1.3.0a-1.jar")
+	compile files("/libs/Thaumcraft-1.7.10-4.2.3.4.jar")
+    compile 'net.sengir.forestry:forestry_1.7.10:3.4.0.7:dev'
+	compile files("/libs/BloodMagic-1.7.10-1.3.0b-3.jar")
 }
 
 processResources
