@@ -84,8 +84,8 @@ public class Allele implements IAllele
 					new int[] { 60, 2 });
 			
 			Allele.spawnWispOrHecate = new AlleleEffectSpawnMobWeighted("AMWisp", true, 20,
-					new String[] { ArsMagicaHelper.Name + ".MobWisp", ArsMagicaHelper.Name + ".MobHecate" },
-					new int[] { 40, 3 });
+					new String[] { ArsMagicaHelper.Name + ".MobHecate" },
+					new int[] { 10 });
 		}
 		else
 		{
