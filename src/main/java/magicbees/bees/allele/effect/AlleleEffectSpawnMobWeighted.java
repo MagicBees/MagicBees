@@ -50,6 +50,9 @@ public class AlleleEffectSpawnMobWeighted extends AlleleEffect {
 			if (roll < this.spawnChance[i]) {
 				flag = true;
 				Entity mob = EntityList.createEntityByName(this.entityNames[i], w);
+				// .createEntityByName method returns null when spawning a ghast in the overworld
+				if(mob == null)
+					return false;
 				double[] coords = this.randomMobSpawnCoords(w, genome, housing);
 
 				mob.setPositionAndRotation(coords[0], coords[1], coords[2], w.rand.nextFloat() * 360f, 0f);
