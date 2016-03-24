@@ -1,11 +1,17 @@
 package magicbees.main.utils.compat;
 
 import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.common.event.FMLInterModComms;
+import magicbees.item.types.DropType;
 import magicbees.main.Config;
 import magicbees.main.utils.BlockInterface;
 import magicbees.main.utils.ItemInterface;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.fluids.FluidStack;
 
 public class EnderIOHelper implements IModHelper {
 
@@ -15,6 +21,7 @@ public class EnderIOHelper implements IModHelper {
 	public static Item itemMaterial;
 	public static Item dust;
 	
+	public static FluidStack fluidXP;
 	
 	public enum AlloyType {
 		ELECTRICAL_STEEL,
@@ -68,6 +75,8 @@ public class EnderIOHelper implements IModHelper {
 		if (isActive()) {
 			getBlocks();
 			getItems();
+			getFluids();
+			setupCrafting();
 		}
 	}
 
@@ -82,5 +91,20 @@ public class EnderIOHelper implements IModHelper {
 		EnderIOHelper.alloyIngot = ItemInterface.getItem(Name, "itemAlloy");
 		EnderIOHelper.itemMaterial = ItemInterface.getItem(Name, "itemMaterial");
 		EnderIOHelper.dust = ItemInterface.getItem(Name, "itemPowderIngot");
+	}
+	
+	private static void getFluids() {
+		EnderIOHelper.fluidXP = FluidRegistry.getFluidStack("xpjuice", 50);
+	}
+	
+	private static void setupCrafting() {
+		NBTTagCompound toSend = new NBTTagCompound();
+		toSend.setInteger("energy", 4000);
+		toSend.setTag("input", new NBTTagCompound());
+		toSend.setTag("output", new NBTTagCompound());
+		ItemStack intellectDrop = Config.drops.getStackForType(DropType.INTELLECT);
+		intellectDrop.writeToNBT(toSend.getCompoundTag("input"));
+		fluidXP.writeToNBT(toSend.getCompoundTag("output"));
+		FMLInterModComms.sendMessage("ThermalExpansion", "CrucibleRecipe", toSend);
 	}
 }
