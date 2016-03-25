@@ -237,6 +237,19 @@ public class BeeMutation {
 			beeMutationFactory.createMutation(baseA, baseB, BeeSpecies.FLUIX.getGenome(), 17);
 		}
 		
+		if (BeeSpecies.STEEL.isActive()){
+			baseA = (BeeSpecies.TE_COAL.isActive()) ? BeeSpecies.TE_COAL.getSpecies() : BeeSpecies.FIREY.getSpecies();
+			mutation = beeMutationFactory.createMutation(baseA, BeeSpecies.IRON.getSpecies(), BeeSpecies.STEEL.getGenome(), 12);
+			if(OreDictionary.getOres("blockSteel").size() > 0) {
+				mutation.requireResource("blockSteel");
+			}
+		}
+		
+		if (BeeSpecies.OBSIDIAN.isActive()){
+			beeMutationFactory.createMutation(BeeSpecies.FIREY.getSpecies(), BeeSpecies.EARTHY.getSpecies(), BeeSpecies.OBSIDIAN.getGenome(), 14)
+					.requireResource("blockDiamond");
+		}
+		
 		if (ThaumcraftHelper.isActive()) {
 			beeMutationFactory.createMutation(BeeSpecies.WINDY.getSpecies(), BeeSpecies.WINDY.getSpecies(), BeeSpecies.TC_AIR.getGenome(), 8)
 					.requireResource(ThaumcraftHelper.crystal, ThaumcraftHelper.ShardType.AIR.ordinal());
@@ -368,6 +381,40 @@ public class BeeMutation {
 			if (BeeSpecies.AE_SKYSTONE.isActive()) {
 				beeMutationFactory.createMutation(BeeSpecies.EARTHY.getSpecies(), BeeSpecies.WINDY.getSpecies(), BeeSpecies.AE_SKYSTONE.getGenome(), 20)
 					.requireResource(AppliedEnergisticsHelper.skystone, 0);
+			}
+		}
+		
+		if (EnderIOHelper.isActive()) {
+			beeMutationFactory.createMutation(BeeSpecies.SOUL.getSpecies(), BeeSpecies.GOLD.getSpecies(), BeeSpecies.SOULARIUM.getGenome(), 8)
+					.requireResource("blockSoularium");
+		
+			baseB = (BeeSpecies.STEEL.isActive()) ? BeeSpecies.STEEL.getSpecies() : BeeSpecies.IRON.getSpecies();
+			beeMutationFactory.createMutation(BeeSpecies.SILICON.getSpecies(), baseB, BeeSpecies.EIO_ELECTRICAL.genome(), 10)
+					.requiresResource("blockElectricalSteel");
+			
+			if (BeeSpecies.STEEL.isActive()) {
+				baseA = BeeSpecies.STEEL.getSpecies();
+			} else if (BeeSpecies.TE_COAL.isActive()){
+				baseA = BeeSpecies.TE_COAL.getSpecies();
+			} else {
+				baseA = BeeSpecies.IRON.getSpecies();
+			}
+			beeMutationFactory.createMutation(baseA, BeeSpecies.OBSIDIAN.getSpecies(), BeeSpecies.EIO_DARK_STEEL.getGenome(), 12)
+					.requireResource("blockDarkSteel").requireNight();
+			
+			baseA = (BeeSpecies.TE_WINSOME.isActive()) ? BeeSpecies.TE_WINSOME.getSpecies() : Allele.getBaseSpecies("Phantasmal");
+			beeMutationFactory.createMutation(baseA, BeeSpecies.IRON.getSpecies(), BeeSpecies.EIO_PULSATING.getGenome(), 14)
+					.requireResource("blockPhasedIron");
+			beeMutationFactory.createMutation(baseA, BeeSpecies.EIO_ENERGETIC.getSpecies(), BeeSpecies.EIO_VIBRANT.getGenome(), 14)
+					.requireResouce("blockPhasedGold");
+			if(ThermalModsHelper.isActive()){
+				beeMutationFactory.createMutation(BeeSpecies.GOLD.getSpecies(), BeeSpecies.TE_LUX.getSpecies(), EIO_ENERGETIC.getGenome(), 12)
+						.requireResource("blockEnergeticAlloy");
+				beeMutationFactory.createMutation(BeeSpecies.GOLD.getSpecies(), BeeSpecies.TE_DESTABILIZED.getSpecies(), EIO_ENERGETIC.getGenome(), 12)
+						.requireResource("blockEnergeticAlloy");
+			} else {
+				beeMutationFactory.createMutation(BeeSpecies.GOLD.getSpecies(), Allele.getBaseSpecies("Demonic"), BeeSpecies.EIO_ENERGETIC.getGenome(), 12)
+						.requireResource("blockEnergeticAlloy");
 			}
 		}
 	}
