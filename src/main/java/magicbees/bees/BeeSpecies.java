@@ -562,7 +562,18 @@ public enum BeeSpecies
 		if (!AppliedEnergisticsHelper.isActive()) {
 			AE_SKYSTONE.setInactive();
 		}
-
+		
+		BeeProductHelper.initEnderIOProducts();
+		if (!EnderIOHelper.isActive()) {
+			SOULARIUM.setInactive();
+			EIO_ELECTRICAL.setInactive();
+			EIO_DARK_STEEL.setInactive();
+			EIO_PULSATING.setInactive();
+			EIO_ENERGETIC.setInactive();
+			EIO_VIBRANT.setInactive();
+		}
+		
+		//--- finally, make icons ----
 		for (BeeSpecies beeSpecies : BeeSpecies.values()) {
 			if (beeSpecies.isActive()) {
 				beeSpecies.setupCustomIconProvider();
