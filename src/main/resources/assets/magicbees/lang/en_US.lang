@@ -71,6 +71,7 @@ comb.TEcarbon=Carbon Comb
 comb.TEelectric=Electric Comb
 comb.TElux=Lux Comb
 comb.TEendearing=Endearing Comb
+comb.obsidian=Black Glass Comb
 
 #Waxes
 wax.magic=Magic Wax
@@ -99,6 +100,10 @@ nugget.lead=Lead Nugget
 nugget.diamond=Diamond Shard
 nugget.emerald=Emerald Shard
 nugget.apatite=Apatite Shard
+nugget.electrical_steel=Electrical Steel Nugget
+nugget.energetic_alloy=Energetic Alloy Nugget
+nugget.dark_steel=Nugget of Dark Steel
+nugget.soularium=Soularium Nugget
 
 #Propolises
 propolis.dull=Ordered Propolis
@@ -286,6 +291,7 @@ magicbees.speciesSmouldering=Smouldering
 magicbees.speciesSmouldering.description=The Skulking bees have become alight with the fire of the ever-burning Blazes.|Apinomicon
 magicbees.speciesBigBad=Big Bad
 magicbees.speciesBigBad.description="Who is afraid of the Big Bad Chris?"|Pahimar, last words
+
 magicbees.speciesTCBrainy=Brainy
 magicbees.speciesTCBrainy.description=Their combs may be fetid and foul-smelling, but their intelligence is well-developed.|Apinomicon
 magicbees.speciesTCBatty=Batty
@@ -435,6 +441,7 @@ magicbees.speciesAMVortex=Vortex
 magicbees.speciesAMVortex.description=Ravenous for mana, they may be dangerous for any caster.|Apinomicon
 magicbees.speciesAMWight=Wight
 magicbees.speciesAMWight.description="They attract magical spirits; not always docile."|Mithion, Adept
+
 magicbees.speciesTEBlizzy=Blizzy
 magicbees.speciesTEBlizzy.description=Frigid and cold, like miniature snowmen.|Apinomicon
 magicbees.speciesTEGelid=Gelid
@@ -471,6 +478,7 @@ magicbees.speciesTEWinsome=Winsome
 magicbees.speciesTEWinsome.description="I like these ones, they're so adorable!"|Jadedcat, maker of packs
 magicbees.speciesTEEndearing=Endearing
 magicbees.speciesTEEndearing.description="Hypnotic powers and vicious temperment aside, these bees are the cutest!"|Jadedcat, maker of packs
+
 magicbees.speciesRSAFluxed=Fluxed
 magicbees.speciesRSAFluxed.description="What? Bees are OP."|Marquis Muskrat
 magicbees.speciesBotRooted=Rooted
@@ -491,6 +499,24 @@ magicbees.speciesBotAlfheim=Alfheim
 magicbees.speciesBotAlfheim.description=They recall their time in Alfheim, and yearn for a world infused with mana, and seek to make it so.|Apinomicon
 magicbees.speciesAESkystone=Skystone
 magicbees.speciesAESkystone.description=Born of the union of the Earth and the Sky, falling to the ground, wreathed in flame.|Apinomicon
+
+magicbees.speciesSteel=Steely
+magicbees.speciesSteel.description=
+magicbees.speciesElectricalSteel=Ferrolectric
+magicbees.speciesElectricalSteel.description=
+magicbees.speciesDarkSteel=Obduric
+magicbees.speciesDarkSteel.description=
+magicbees.speciesObsidian=Obsidian
+magicbees.speciesObsidian.description=
+magicbees.speciesSoularium=Bardos
+magicbees.speciesSoularium.description=
+magicbees.speciesEnergeticAlloy=Energetic
+magicbees.speciesEnergeticAlloy.description=
+magicbees.speciesVibantAlloy=Vibrant
+magicbees.speciesVibrantAlloy.description=
+magicbees.speciesPulsatingIron=Pulsating
+magicbees.speciesPulsatingIron.description=
+
 magicbees.species=
 magicbees.species.description=
 
