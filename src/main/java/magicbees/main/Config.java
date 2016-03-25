@@ -390,6 +390,11 @@ public class Config
 			LogHelper.info("Found nugget of type " + type.toString());
 			item = type.toString().toLowerCase();
 			item = Character.toString(item.charAt(0)).toUpperCase() + item.substring(1);
+			int space = item.indexOf('_');
+			while(space > -1) {
+				item = item.substring(0,space) + Character.toString(item.charAt(space+1)).toUpperCase() + item.substring(space+2);
+				space = item.indexOf('_');
+			}
 			if (OreDictionary.getOres("ingot" + item).size() <= 0) {
 				if (OreDictionary.getOres("shard" + item).size() <= 0) {
 					LogHelper.info("Disabled nugget " + type.toString());
