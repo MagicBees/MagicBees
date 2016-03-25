@@ -515,9 +515,6 @@ public enum BeeSpecies
 		}
 
 		BeeProductHelper.initRedstoneArsenelProducts();
-		if (!RedstoneArsenalHelper.isActive()) {
-			RSA_FLUXED.setInactive();
-		}
 
 		BeeProductHelper.initBotaniaProducts();
 		if (!BotaniaHelper.isActive()) {
