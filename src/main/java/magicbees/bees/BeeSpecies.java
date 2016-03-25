@@ -1,5 +1,6 @@
 package magicbees.bees;
 
+import magicbees.main.Config;
 import magicbees.main.utils.compat.AppliedEnergisticsHelper;
 import magicbees.main.utils.compat.ArsMagicaHelper;
 import magicbees.main.utils.compat.BotaniaHelper;
@@ -515,6 +516,9 @@ public enum BeeSpecies
 		}
 
 		BeeProductHelper.initRedstoneArsenelProducts();
+		if ( !Config.redstoneArsenalActive){
+			RSA_FLUXED.setInactive();
+		}
 
 		BeeProductHelper.initBotaniaProducts();
 		if (!BotaniaHelper.isActive()) {
