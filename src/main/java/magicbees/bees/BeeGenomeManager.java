@@ -1558,6 +1558,7 @@ public class BeeGenomeManager {
 		IAllele[] genome = getTemplateTEBase();
 		
 		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.EIO_PULSATING.getSpecies();
+		genome[EnumBeeChromosome.LIFESPAN.ordinal()] = Allele.getBaseAllele("lifespanShort");
 		
 		return genome;
 	}
@@ -1567,6 +1568,7 @@ public class BeeGenomeManager {
 		
 		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.EIO_ENERGETIC.getSpecies();
 		genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.getBaseAllele("effectIgnition");
+		genome[EnumBeeChromosome.SPEED.ordinal()] = Allele.getBaseAllele("speedFaster");
 		
 		return genome;
 	}
