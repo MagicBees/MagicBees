@@ -388,6 +388,10 @@ public class BeeProductHelper {
 		
 		if (RedstoneArsenalHelper.isActive()) {
 			RSA_FLUXED.addSpecialty(RedstoneArsenalHelper.fluxNugget, 0.9f);
+		} else if (OreDictionary.getOres("nuggetElectrumFlux").size() > 0){
+			RSA_FLUXED.addSpecialty(OreDictionary.getOres("nuggetElectrumFlux").get(0), 0.9f);
+		} else {
+			RSA_FLUXED.setInactive();
 		}
 	}
 	
