@@ -255,6 +255,22 @@ public class BeeProductHelper {
 		else {
 			FLUIX.setInactive();
 		}
+		
+		STEEL.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
+		if (OreDictionary.getOres("nuggetSteel").size() > 0 ){
+			STEEL.addSpecialty(OreDictionary.getOres("nuggetSteel").get(0), 0.15f);
+		} else {
+			STEEL.setInactive();
+		}
+		
+		OBSIDIAN.addProduct(Config.combs.getStackForType(CombType.WATERY), 0.10f)
+				.addProduct(Config.combs.getStackForType(CombType.EARTHY), 0.10f)
+				.addSpecialty(new ItemStack(Blocks.obsidian)), 0.025f);
+		if(OreDictionary.getOres("dustObsidian").size() > 0){
+			OBSIDIAN.addProduct(Config.combs.getStackForType(CombType.OBSIDIAN), 0.05f);
+		} else {
+			OBSIDIAN.setInactive();
+		}
 	}
 	
 	public static void initThaumcraftProducts() {
@@ -431,6 +447,24 @@ public class BeeProductHelper {
 		}
 		else {
 			AE_SKYSTONE.setInactive();
+		}
+	}
+	
+	public static void initEnderIOProducts() {
+		SOULARIUM.addProduct(Config.combs.getStackForType(Combs.SOUL), 0.10f)
+				.addSpecialty(Config.nuggets.getStackForType(NuggetType.SOULARIUM), 0.05f);
+		EIO_ELECTRICAL.addProduct(new ItemStack(ForestryHelper.beeComb, 1, ForestryHelper.Comb.PARCHED.ordinal()), 0.12f)
+				.addSpecialty(Config.nuggets.getStackForType(NuggetType.ELECTRICAL_STEEL), 0.12f);
+		EIO_DARK_STEEL.addProduct(Config.combs.getStackForType(CombType.OBSIDIAN), 0.10f)
+				.addSpecialty(Config.nuggets.getStackForType(NuggetType.DARK_STEEL), 0.09f);
+		EIO_PULSATING.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
+		EIO_ENERGETIC.addProduct(Config.combs.getStackForType(CombType.MOLTEN), 0.10f)
+				.addSpecialty(Config.nuggets.getStackForType(NuggetType.ENERGETIC_ALLOY), 0.12f);
+		EIO_VIBRANT.addProduct(new ItemStack(ForestryHelper.beeComb, 1, ForestryHelper.Comb.MYSTERIOUS.ordinal()), 0.08f);
+		
+		if(EnderIOHelper.isActive()){
+			EIO_PULSATING.addSpecialty(OreDictionary.getOres("nuggetPulsatingIron").get(0), 0.16f);
+			EIO_VIBRANT.addSpecialty(OreDictionary.getOres("nuggetVibrantAlloy").get(0), 0.10f);
 		}
 	}
 }
