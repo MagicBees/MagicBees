@@ -501,9 +501,9 @@ magicbees.speciesAESkystone=Skystone
 magicbees.speciesAESkystone.description=Born of the union of the Earth and the Sky, falling to the ground, wreathed in flame.|Apinomicon
 
 magicbees.speciesSteel=Steely
-magicbees.speciesSteel.description=Hard, pumping, and indefatigueable these bees are much stronger than their foremothers.|Resonator log - WWW2 
+magicbees.speciesSteel.description=Hard, pumping, and indefatigueable these bees are much stronger than their foremothers.|Resonator transcript - WWW2 
 magicbees.speciesElectricalSteel=Ferrolectric
-magicbees.speciesElectricalSteel.description=Strong and bright, a poor combination for lesser beings.|Resonator log - DD
+magicbees.speciesElectricalSteel.description=Strong and bright, a poor combination for lesser beings.|Think Tank note.
 magicbees.speciesDarkSteel=Obduric
 magicbees.speciesDarkSteel.description=Fragile and weak themselves, these bees' hive is made of the most resilient substance I've ever seen.|Sengir, Mad Apiarist
 magicbees.speciesObsidian=Obsidian
@@ -513,7 +513,7 @@ magicbees.speciesSoularium.description="Well, it's quite simple, really.  Just f
 magicbees.speciesEnergeticAlloy=Energetic
 magicbees.speciesEnergeticAlloy.description=They really ARE abuzz with potential! |Junior Apiarist
 magicbees.speciesVibantAlloy=Vibrant
-magicbees.speciesVibrantAlloy.description="We see you now."|Resonator - t100
+magicbees.speciesVibrantAlloy.description="Be bees buzz... Buzz bee see who?"|Resonator - t85
 magicbees.speciesPulsatingIron=Pulsating
 magicbees.speciesPulsatingIron.description="Don't let them near house, these bees party hard."|Sengir, Mad Apiarist
 
