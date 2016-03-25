@@ -1504,6 +1504,87 @@ public class BeeGenomeManager {
 		return genome;
 	}
 	
+	public static IAllele[] getTemplateSteel(){
+		IAllele[] genome = getTemplateBaseMetallic();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.STEEL.getSpecies();
+		
+		return genome;
+	}
+	
+	public static IAllele[] getTemplateObsidian(){
+		IAllele[] genome = getTemplateModBase();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.OBSIDIAN.getSpecies();
+		genome[EnumBeeChromosome.TEMPERAUTE_TOLERANCE.ordinal()] = Allele.getBaseAllele("toleranceDown2");
+		genome[EnumBeeChromosome.NOCTURNAL.ordinal()] = Allele.getBaseAllele("boolTrue");
+		genome[EnumBeeChromosome.CAVE_DWELLING.ordinal()] = Allele.getBaseAllele("boolTrue");
+		genome[EnumBeeChromosome.HUMIDITY_TOLERANCE.ordinal()] = Allele.getBaseAllele("toleranceBoth1");
+		genome[EnumBeeChromosome.TOLERANT_FLYER.ordinal()] = Allele.getBaseAlle("boolTrue");
+		genome[EnumBeeChromosome.FLOWER_PROVIDER.ordinal()] = Allele.getBaseAllele("flowersNether");
+		genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.getBaseAllele("effectIgnition");
+		genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.getBaseAllele("effectAggressive");
+		
+		return genome;
+	}
+	
+	public static IAllele[] getTemplateSoularium(){
+		IAllele[] genome = getTemplateSoul();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.SOULARIUM.getSpecies();
+		
+		return genome;
+	}
+	
+	public static IAllele[] getTemplateElectricalSteel(){
+		IAllele[] genome = getTemplateSilicon();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.EIO_ELECTRICAL.getSpecies();
+		genome[EnumBeeChromosome.TOLERANT_FLYER.ordinal()] = Allele.getBaseAllele("boolFalse");
+		
+		return genome;
+	}
+	
+	public static IAllele[] getTemplateDarkSteel(){
+		IAllele[] genome = getTemplateMutableBase();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.EIO_DARK_STEEL.getSpecies();
+		genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.effectWithering;
+		
+		return genome;
+	}
+	
+	public static IAllele[] getTemplatePulsatingIron(){
+		IAllele[] genome = getTemplateTEBase();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.EIO_PULSATING.getSpecies();
+		
+		return genome;
+	}
+	
+	public static IAllele[] getTemplateEnergeticAlloy(){
+		IAllele[] genome = getTemplateBaseMetallic();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.EIO_ENERGETIC.getSpecies();
+		genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.getBaseAllele("effectIgnition");
+		
+		return genome;
+	}
+	
+	public static IAllele[] getTemplateVibrantAlloy(){
+		IAllele[] genome = getTemplateBaseMetallic();
+		
+		genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.EIO_VIBRANT.getSpecies();
+		
+		if (ExtraBeesHelper.isActive()){
+			genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.getAllele("extrabees.effect.lightning");
+		} else {
+			genome[EnumBeeChromosome.EFFECT.ordinal()] = Allele.getBaseAllele("effectIgnition");
+		}
+		
+		return genome;
+	}
+	
 	/*--------------------- Other Stuff ---------------------------------- */
 	
 	public static ItemStack getBeeNBTForSpecies(BeeSpecies species, EnumBeeType beeType) {
