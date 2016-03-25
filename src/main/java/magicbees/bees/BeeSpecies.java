@@ -153,7 +153,7 @@ public enum BeeSpecies
 			0x481D6D, 0xBD92F1, EnumTemperature.HOT, EnumHumidity.ARID, true, false),
 	OSMIUM("Osmium", "hyacintho", BeeClassification.METALLIC,
 			0x374B5B, 0x6C7B89, EnumTemperature.NORMAL, EnumHumidity.NORMAL, false, false),
-
+	
 	DIAMOND("Diamond", "diamond", BeeClassification.GEM,
 			0x209581, 0x8DF5E3, EnumTemperature.NORMAL, EnumHumidity.NORMAL, true, false),
 	EMERALD("Emerald", "prasinus", BeeClassification.GEM,
@@ -312,6 +312,25 @@ public enum BeeSpecies
 	AE_SKYSTONE("AESkystone", "terra astris", BeeClassification.TRANSMUTING,
 			0x4B8381, 0x252929, EnumTemperature.HOT, EnumHumidity.ARID, false, true),
 	
+	// ------------------------- EnderIO Bees ---------------------------------
+	STEEL("Steely", "ferrocarbon", BeeClassification.METALLIC,
+			0x5B5B5B, 0xD5D5DB, EnumTemperature.NORMAL, EnumHumidity.ARID, false, true),
+	OBSIDIAN("Obsidian", "vulcovitrum", BeeClassification.MAGICAL,
+			0x2D2D2E, 0x1D0018, EnumTemperature.HELLISH, EnumHumidity.NORMAL, false, false),
+	SOULARIUM("Soularium", "psychi", BeeClassification.SOUL,
+			0xBF877C, BodyColours.SKULKING, EnumTemperature.HELLISH, EnumHumidity.NORMAL, false, true),
+	
+	EIO_ELECTRICAL("ElectricalSteel", "ferrolectrapis", BeeClassification.ALLOYED,
+			0x576857, 0xDBE9E9, EnumTemperature.NORMAL, EnumHumidity.NORMAL, false, true),
+	EIO_DARK_STEEL("DarkSteel", "tenebruschalbys", BeeClassification.ALLOYED,
+			0x2D2D3E, BodyColours.ABOMINABLE, EnumTemperature.NORMAL, EnumHumidity.NORMAL, false, true),
+	EIO_PULSATING("PulsatingIron", "pulpitoferrus", BeeClassification.ALLOYED,
+			0x68FF68, 0xE9E9E9, EnumTemperature.COLD, EnumHumidity.NORMAL, true, true),
+	EIO_ENERGETIC("EnergeticAlloy", "potentiauro", BeeClassification.ALLOYED,
+			0xFFAE9A, EnumTemperature.NORMAL, EnumHumidity.NORMAL, true, false),
+	EIO_VIBRANT("VibrantAlloy", "vivivi", BeeClassification.ALLOYED,
+			0x95FF95, 0xFFFF0B, EnumTemperature.NORMAL, EnumHumidity.NORMAL, true, true),
+	
 	;
 
 	// For body colours used by more than one bee.
@@ -452,6 +471,14 @@ public enum BeeSpecies
 		BOT_DREAMING.registerGenomeTemplate(BeeGenomeManager.getTemplateBotDreaming());
 		BOT_ALFHEIM.registerGenomeTemplate(BeeGenomeManager.getTemplateBotAelfheim());
 		AE_SKYSTONE.registerGenomeTemplate(BeeGenomeManager.getTemplateAESkystone());
+		STEEL.registerGenomeTemplate(BeeGenomeManager.getTemplateSteel());
+		OBSIDIAN.registerGenomeTemplate(BeeGenomeManager.getTemplateObsidian());
+		SOULARIUM.registerGenomeTemplate(BeeGenomeManager.getTemplateSoularium());
+		EIO_ELECTRICAL.registerGenomeTemplate(BeeGenomeManager.getTemplateElectricalSteel());
+		EIO_DARK_STEEL.registerGenomeTemplate(BeeGenomeManager.getTemplateDarkSteel());
+		EIO_PULSATING.registerGenomeTemplate(BeeGenomeManager.getTemplatePulsatingIron());
+		EIO_ENERGETIC.registerGenomeTemplate(BeeGenomeManager.getTemplateEnergeticAlloy());
+		EIO_VIBRANT.registerGenomeTemplate(BeeGenomeManager.getTemplateVibrantAlloy());
 		
 		BeeProductHelper.initThaumcraftProducts();
 		if (!ThaumcraftHelper.isActive()) {
