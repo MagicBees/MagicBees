@@ -38,6 +38,9 @@ public enum BeeClassification implements IClassification
 	BLOODY("Bloody", "Sanguis"),
 	
 	BOTANICAL("Botanical", "Botanica"),
+	
+	ALLOYED("Alloyed", "Heterometallus"),
+	
 	;
 	
 	private String uID;
