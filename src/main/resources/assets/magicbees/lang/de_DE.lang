@@ -302,12 +302,12 @@ magicbees.speciesTCBeef=Rindfleischig
 magicbees.speciesTCBeef.description="Muh, muh, muh. Moment, was?"|Verwirrte Biene
 magicbees.speciesTCPork=Schweineähnlich
 magicbees.speciesTCPork.description="Oink, oink. Äh.... bsss?"|Verwirrte Biene
-  #magicbees.speciesSheepish=Sheepish
-  #magicbees.speciesSheepish.description="Baa baaaazzzzz bzzz"|Confused bee
-  #magicbees.speciesCatty=Catty
-  #magicbees.speciesCatty.description="Purr purr meowwwzzzzz"|Confused bee
-  #magicbees.speciesHorse=Neighsayer
-  #magicbees.speciesHorse.description="Nay! I mean Neigh."|Confused bee
+magicbees.speciesSheepish=Wollegbiene
+magicbees.speciesSheepish.description="Baa baaaassss bsss"|Verwirrte bee
+magicbees.speciesCatty=Katzenhoft
+magicbees.speciesCatty.description="Purr purr meowwwzzzzz"|Verwirrte bee
+magicbees.speciesHorse=Wiehernspract Biene
+magicbees.speciesHorse.description="Nay! Nicht, Neigh!"|Verwirrte bee
 
 magicbees.speciesTimely=Rechtzeitig
 magicbees.speciesTimely.description="Ein Imker ist nie zu spät. Er kommt immer dann an, wenn er er es geplant hat!"|Sengir, Verrückter Imker
@@ -450,14 +450,7 @@ magicbees.speciesTEDante=Dantesk
 magicbees.speciesTEDante.description=Das Vermischen von Bienen in einem Inferno bringt überraschende Resultate.|Apinomikon
 magicbees.speciesTEPyro=Pyrisch
 magicbees.speciesTEPyro.description=Du Monster.|Jeder, an dich.
-  #magicbees.speciesTEShocking=Shocking
-  #magicbees.speciesTEShocking.description=Their hives attract static charge through an unknown mechanism. Use caution when collecting combs.|Apinomicon
-  #magicbees.speciesTEAmped=Amped
-  #magicbees.speciesTEAmped.description="They're really excited. Like, CRAZY excited. You'd have to measure it in terms of electric current, that's how excited they are."|Marquis Muskrat
-  #magicbees.speciesTEGrounded=Grounded
-  #magicbees.speciesTEGrounded.description=They have an affinity for music, especially of the variety with electric guitars and screamed vocals.|Apinomiconl
-  #magicbees.speciesTERocking=Rockin'
-  #magicbees.speciesTERocking.description=[guitar solo]
+
 magicbees.speciesTEElectrum=Elektrös
 magicbees.speciesTEElectrum.description=Das Bester beider wertvoller Metalle, aus irgendeinem Grund jedoch besser als beide.|Apinomikon
 magicbees.speciesTEPlatinum=Platin
@@ -501,22 +494,6 @@ magicbees.speciesAESkystone=Himmelssteinern
 magicbees.speciesAESkystone.description=Geboren aus der Einheit von Himmel und Erde, zu Boden gefallen, von Flammen umgeben.|Apinomikon
 
 
-magicbees.speciesSteel=
-magicbees.speciesSteel.description=
-magicbees.speciesElectricalSteel=
-magicbees.speciesElectricalSteel.description=
-magicbees.speciesDarkSteel=
-magicbees.speciesDarkSteel.description=
-magicbees.speciesObsidian=
-magicbees.speciesObsidian.description=
-magicbees.speciesSoularium=
-magicbees.speciesSoularium.description=
-magicbees.speciesEnergeticAlloy=
-magicbees.speciesEnergeticAlloy.description=
-magicbees.speciesVibantAlloy=
-magicbees.speciesVibrantAlloy.description=
-magicbees.speciesPulsatingIron=
-magicbees.speciesPulsatingIron.description=
 
 magicbees.species=
 magicbees.species.description=
