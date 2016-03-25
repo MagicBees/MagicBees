@@ -311,7 +311,46 @@ public class CraftingManager {
 					'x', "nuggetLead"
 			));
 		}
+		
+		if (OreDictionary.getOres("ingotElectricalSteel").size() <= 0) {
+			NuggetType.ELECTRICAL_STEEL.setInactive();
+		}
+		else {
+			GameRegistry.addRecipe(new ShapedOreRecipe(OreDictionary.getOres("ingotElectricalSteel").get(0),
+					"xxx", "xxx", "xxx",
+					'x', "nuggetElectricalSteel"
+			));
+		}
 
+		if (OreDictionary.getOres("ingotEnergeticAlloy").size() <= 0) {
+			NuggetType.ENERGETIC_ALLOY.setInactive();
+		}
+		else {
+			GameRegistry.addRecipe(new ShapedOreRecipe(OreDictionary.getOres("ingotEnergeticAlloy").get(0),
+					"xxx", "xxx", "xxx",
+					'x', "nuggetEnergeticAlloy"
+			));
+		}
+		
+		if (OreDictionary.getOres("ingotDarkSteel").size() <= 0) {
+			NuggetType.DARK_STEEL.setInactive();
+		}
+		else {
+			GameRegistry.addRecipe(new ShapedOreRecipe(OreDictionary.getOres("ingotDarkSteel").get(0),
+					"xxx", "xxx", "xxx",
+					'x', "nuggetDarkSteel"
+			));
+		}
+		
+		if (OreDictionary.getOres("ingotSoularium").size() <= 0) {
+			NuggetType.SOULARIUM.setInactive();
+		}
+		else {
+			GameRegistry.addRecipe(new ShapedOreRecipe(OreDictionary.getOres("ingotSolularium").get(0),
+					"xxx", "xxx", "xxx",
+					'x', "nuggetSoularium"
+			));
+		}
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.iron_ingot),
 				"xxx", "xxx", "xxx",
 				'x', "nuggetIron"
@@ -590,6 +629,13 @@ public class CraftingManager {
 			output.put(Config.wax.getStackForType(WaxType.MAGIC),  0.55f);
 			output.put(Config.drops.getStackForType(DropType.ENDEARING),  0.22f);
 			RecipeManagers.centrifugeManager.addRecipe(20, Config.combs.getStackForType(CombType.TE_ENDEARING), output);
+		}
+		
+		if (OreDictionary.getOres("dustObsidian").size() > 0) {
+			output = newMap();
+			output.put(Config.wax.getStackForType(WaxType.MAGIC),  1f);
+			output.put(OreDictionary.getOres("dustObsidian").get(0),  0.6f);
+			RecipeManagers.centrifugeManager.addRecipe(20, Config.combs.getStackForType(CombType.OBSIDIAN), output);
 		}
 
 	}
