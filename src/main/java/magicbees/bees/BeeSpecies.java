@@ -318,7 +318,7 @@ public enum BeeSpecies
 	OBSIDIAN("Obsidian", "vulcovitrum", BeeClassification.MAGICAL,
 			0x2D2D2E, 0x1D0018, EnumTemperature.HELLISH, EnumHumidity.NORMAL, false, false),
 	SOULARIUM("Soularium", "psychi", BeeClassification.SOUL,
-			0xBF877C, BodyColours.SKULKING, EnumTemperature.HELLISH, EnumHumidity.NORMAL, false, true),
+			0x7E601F, BodyColours.SKULKING, EnumTemperature.HELLISH, EnumHumidity.NORMAL, false, true),
 	
 	EIO_ELECTRICAL("ElectricalSteel", "ferrolectrapis", BeeClassification.ALLOYED,
 			0x576857, 0xDBE9E9, EnumTemperature.NORMAL, EnumHumidity.NORMAL, false, true),
@@ -327,7 +327,7 @@ public enum BeeSpecies
 	EIO_PULSATING("PulsatingIron", "pulpitoferrus", BeeClassification.ALLOYED,
 			0x68FF68, 0xE9E9E9, EnumTemperature.COLD, EnumHumidity.NORMAL, true, true),
 	EIO_ENERGETIC("EnergeticAlloy", "potentiauro", BeeClassification.ALLOYED,
-			0xFFAE9A, EnumTemperature.NORMAL, EnumHumidity.NORMAL, true, false),
+			0xFFAE4B, EnumTemperature.NORMAL, EnumHumidity.NORMAL, true, false),
 	EIO_VIBRANT("VibrantAlloy", "vivivi", BeeClassification.ALLOYED,
 			0x95FF95, 0xFFFF0B, EnumTemperature.NORMAL, EnumHumidity.NORMAL, true, true),
 	
