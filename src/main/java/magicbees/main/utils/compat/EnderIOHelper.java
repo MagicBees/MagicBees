@@ -2,6 +2,7 @@ package magicbees.main.utils.compat;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.event.FMLInterModComms;
+import forestry.api.recipes.RecipeManagers;
 import magicbees.item.types.DropType;
 import magicbees.main.Config;
 import magicbees.main.utils.BlockInterface;
@@ -23,6 +24,7 @@ public class EnderIOHelper implements IModHelper {
 	
 	public static FluidStack fluidXP;
 	
+	//both ingots and blocks
 	public enum AlloyType {
 		ELECTRICAL_STEEL,
 		ENERGETIC_ALLOY,
@@ -98,13 +100,17 @@ public class EnderIOHelper implements IModHelper {
 	}
 	
 	private static void setupCrafting() {
-		NBTTagCompound toSend = new NBTTagCompound();
-		toSend.setInteger("energy", 4000);
-		toSend.setTag("input", new NBTTagCompound());
-		toSend.setTag("output", new NBTTagCompound());
-		ItemStack intellectDrop = Config.drops.getStackForType(DropType.INTELLECT);
-		intellectDrop.writeToNBT(toSend.getCompoundTag("input"));
-		fluidXP.writeToNBT(toSend.getCompoundTag("output"));
-		FMLInterModComms.sendMessage("ThermalExpansion", "CrucibleRecipe", toSend);
+		RecipeManagers.squeezerManager.addRecipe(10, new ItemStack[]{Config.drops.getStackForType(DropType.INTELLECT)}, EnderIOHelper.fluidXP);
+
+		if(ThermalModsHelper.isActive()){
+			NBTTagCompound toSend = new NBTTagCompound();
+			toSend.setInteger("energy", 4000);
+			toSend.setTag("input", new NBTTagCompound());
+			toSend.setTag("output", new NBTTagCompound());
+			ItemStack intellectDrop = Config.drops.getStackForType(DropType.INTELLECT);
+			intellectDrop.writeToNBT(toSend.getCompoundTag("input"));
+			fluidXP.writeToNBT(toSend.getCompoundTag("output"));
+			FMLInterModComms.sendMessage("ThermalExpansion", "CrucibleRecipe", toSend);
+		}
 	}
 }
