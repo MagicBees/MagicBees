@@ -95,8 +95,8 @@ public class EnderIOHelper implements IModHelper {
 		EnderIOHelper.dust = ItemInterface.getItem(Name, "itemPowderIngot");
 	}
 	
-	private static void getFluids() {
-		EnderIOHelper.fluidXP = FluidRegistry.getFluidStack("xpjuice", 50);
+	private static void getFluids() {	//getting 1760 mB from 8 BoE, /64 drops = 27.5
+		EnderIOHelper.fluidXP = FluidRegistry.getFluidStack("xpjuice", 25);
 	}
 	
 	private static void setupCrafting() {
