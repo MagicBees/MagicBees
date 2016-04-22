@@ -94,6 +94,7 @@ public class Config
 	public static boolean thermalFoundationActive;
 	public static boolean botaniaActive;
 	public static boolean ae2Active;
+	public static boolean enderIOActive;
 
 	public static float magnetBaseRange;
 	public static float magnetLevelMultiplier;
@@ -270,6 +271,9 @@ public class Config
 		
 		p = configuration.get(CATEGORY_MODULES, "AppliedEnergistics2", true);
 		ae2Active = p.getBoolean();
+		
+		p = configuration.get(CATEGORY_MODULES, "EnderIO", true);
+		enderIOActive = p.getBoolean();
 	}
 
 	private void doGeneralConfigs() {
@@ -386,6 +390,11 @@ public class Config
 			LogHelper.info("Found nugget of type " + type.toString());
 			item = type.toString().toLowerCase();
 			item = Character.toString(item.charAt(0)).toUpperCase() + item.substring(1);
+			int space = item.indexOf('_');
+			while(space > -1) {
+				item = item.substring(0,space) + Character.toString(item.charAt(space+1)).toUpperCase() + item.substring(space+2);
+				space = item.indexOf('_');
+			}
 			if (OreDictionary.getOres("ingot" + item).size() <= 0) {
 				if (OreDictionary.getOres("shard" + item).size() <= 0) {
 					LogHelper.info("Disabled nugget " + type.toString());
@@ -414,6 +423,10 @@ public class Config
 		OreDictionary.registerOre("shardDiamond", nuggets.getStackForType(NuggetType.DIAMOND));
 		OreDictionary.registerOre("shardEmerald", nuggets.getStackForType(NuggetType.EMERALD));
 		OreDictionary.registerOre("shardApatite", nuggets.getStackForType(NuggetType.APATITE));
+		OreDictionary.registerOre("nuggetElectricalSteel", nuggets.getStackForType(NuggetType.ELECTRICAL_STEEL));
+		OreDictionary.registerOre("nuggetEnergeticAlloy", nuggets.getStackForType(NuggetType.ENERGETIC_ALLOY));
+		OreDictionary.registerOre("nuggetDarkSteel", nuggets.getStackForType(NuggetType.DARK_STEEL));
+		OreDictionary.registerOre("nuggetSoularium", nuggets.getStackForType(NuggetType.SOULARIUM));
 	}
 	
 	private void setupBotaniaItems() {

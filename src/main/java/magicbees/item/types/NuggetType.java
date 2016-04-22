@@ -13,6 +13,10 @@ public enum NuggetType
 	DIAMOND,
 	EMERALD,
 	APATITE,
+	ELECTRICAL_STEEL,
+	ENERGETIC_ALLOY,
+	DARK_STEEL,
+	SOULARIUM,
 	;
 	
 	private Item targetIngot;

@@ -71,7 +71,7 @@ comb.TEcarbon=Kohlenstoffwabe
 comb.TEelectric=Electrische Wabe
 comb.TElux=Lux-Wabe
 comb.TEendearing=Enderwabe
-comb.BMSanguine=Blutrote Wabe
+comb.obsidian=Schwartzglas Wabe
 
 #Waxes
 wax.magic=Magisches Wachs
@@ -100,6 +100,10 @@ nugget.lead=Bleinugget
 nugget.diamond=Diamantscherbe
 nugget.emerald=Smaragdscherbe
 nugget.apatite=Apatitscherbe
+nugget.electrical_steel=Elektrischem Stahlnugget
+nugget.energetic_alloy=Nugget aus Energetisierter Legierung
+nugget.dark_steel=Dunkelstahlnugget
+nugget.soularium=Soularium-Nugget
 
 #Propolises
 propolis.dull=Geordnetes Bienenharz
@@ -211,8 +215,10 @@ tile.botania:flower.hibeescus.lore=Besticht durch Wortspiele
 
 #Research
 research.requiresBlock=Erfordert die Basis des %s
-research.requiresPhase=Kommt vor zwischen %s and %s
+research.requiresPhase=Kommt vor zwischen %s und %s
 research.requiresPhaseSingle=Während des %s
+research.bonusPhase=Eher leichter vor zwischen %s und %s
+research.bonusPhaseSingle=Eher leichter während des %s
 research.requiresNode=Kommt nur vor, wenn eine Nodie nahe ist
 research.requiresNodeSpecific=Kommt nur vor im Einfluss einer %s Nodie
 research.requiresBiome=Kommt vor in einem %s
@@ -285,6 +291,23 @@ magicbees.speciesSmouldering=Schwelend
 magicbees.speciesSmouldering.description=Die schleichenden Bienen sind entflammt worden mit dem Feuer der der ewig brennenden Lohen.|Apinomikon
 magicbees.speciesBigBad=Wölfisch
 magicbees.speciesBigBad.description="Schau, Mutter, was ich auf dem Weg nach Hause gefunden habe!"|Rotkäppchen
+
+magicbees.speciesTCBrainy=Intelligent
+magicbees.speciesTCBrainy.description=Ihre Waben mögen zwar übel riechen und stinken, aber ihr Geist ist weit entwickelt.|Apinomikon
+magicbees.speciesTCBatty=Verrückt
+magicbees.speciesTCBatty.description=Sie scheinen auf unerklärliche Art und Weise Fledermäuse anzuziehen.|Apinomikon
+magicbees.speciesTCChicken=Geflügelig
+magicbees.speciesTCChicken.description="Gack, Gack, Gack! ... Du hast mich gehört."|Verwirrte Biene
+magicbees.speciesTCBeef=Rindfleischig
+magicbees.speciesTCBeef.description="Muh, muh, muh. Moment, was?"|Verwirrte Biene
+magicbees.speciesTCPork=Schweineähnlich
+magicbees.speciesTCPork.description="Oink, oink. Äh.... bsss?"|Verwirrte Biene
+magicbees.speciesSheepish=Wollegbiene
+magicbees.speciesSheepish.description="Baa baaaassss bsss"|Verwirrte bee
+magicbees.speciesCatty=Katzenhoft
+magicbees.speciesCatty.description="Purr purr meowwwzzzzz"|Verwirrte bee
+magicbees.speciesHorse=Wiehernspract Biene
+magicbees.speciesHorse.description="Brauchen Sie Ehern? Wir machen Wiehernen!"|Verwirrte bee
 
 magicbees.speciesTimely=Rechtzeitig
 magicbees.speciesTimely.description="Ein Imker ist nie zu spät. Er kommt immer dann an, wenn er er es geplant hat!"|Sengir, Verrückter Imker
@@ -385,18 +408,11 @@ magicbees.speciesTCPure=Pur
 magicbees.speciesTCPure.description="Es ist wie ein Bienenwächter!"|MysteriousAges, Thaumaturge
 magicbees.speciesTCHungry=Aushungernd
 magicbees.speciesTCHungry.description=Niemand weiß, wie diese Bienen die bloße Essenz aus den Nodien entnehmen oder was sie mit ihr tun, aber der Vorgang verwandelt die Nodie langsam in einen furcherregenden Strudel.|Apinomikon
-magicbees.speciesTCBrainy=Intelligent
-magicbees.speciesTCBrainy.description=Ihre Waben mögen zwar übel riechen und stinken, aber ihr Geist ist weit entwickelt.|Apinomikon
+
 magicbees.speciesTCWispy=Wispig
 magicbees.speciesTCWispy.description=Ihre Sprache ist entstellt und unverständlich. Es ist möglich, dass sie zu unnatürlichen Wesen sprechen.|Apinomikon
-magicbees.speciesTCBatty=Verrückt
-magicbees.speciesTCBatty.description=Sie scheinen auf unerklärliche Art und Weise Fledermäuse anzuziehen.|Apinomikon
-magicbees.speciesTCChicken=Geflügelig
-magicbees.speciesTCChicken.description="Gack, Gack, Gack! ... Du hast mich gehört."|Verwirrte Biene
-magicbees.speciesTCBeef=Rindfleischig
-magicbees.speciesTCBeef.description="Muh, muh, muh. Moment, was?"|Verwirrte Biene
-magicbees.speciesTCPork=Schweineähnlich
-magicbees.speciesTCPork.description="Oink, oink. Äh.... bsss?"|Verwirrte Biene
+
+
 magicbees.speciesEEMinium=Minion
 magicbees.speciesEEMinium.description=Es könnte möglich sein, ihre launische und wechselnde Natur auszunutzen.|Apinomikon
 magicbees.speciesAMEssence=Essenziell
@@ -425,6 +441,7 @@ magicbees.speciesAMVortex=Vortex
 magicbees.speciesAMVortex.description=Heißhungrig auf Mana, könnten sie gefährlich für jeden Zauberer sein.|Apinomikon
 magicbees.speciesAMWight=Wesisch
 magicbees.speciesAMWight.description="Sie ziehen magische Wesen an; nicht nur sanftmütige."|Mithion, Adept
+
 magicbees.speciesTEBlizzy=Blizzig
 magicbees.speciesTEBlizzy.description=Eisig und kalt, wie kleine Schneemänner.|Apinomikon
 magicbees.speciesTEGelid=Gelen
@@ -433,6 +450,7 @@ magicbees.speciesTEDante=Dantesk
 magicbees.speciesTEDante.description=Das Vermischen von Bienen in einem Inferno bringt überraschende Resultate.|Apinomikon
 magicbees.speciesTEPyro=Pyrisch
 magicbees.speciesTEPyro.description=Du Monster.|Jeder, an dich.
+
 magicbees.speciesTEElectrum=Elektrös
 magicbees.speciesTEElectrum.description=Das Bester beider wertvoller Metalle, aus irgendeinem Grund jedoch besser als beide.|Apinomikon
 magicbees.speciesTEPlatinum=Platin
@@ -453,12 +471,9 @@ magicbees.speciesTEWinsome=Reizend
 magicbees.speciesTEWinsome.description="Ich mag diese hier, sie sind niedlich!"|Jadedcat
 magicbees.speciesTEEndearing=Enderartig
 magicbees.speciesTEEndearing.description="Abgesehen von den hypnotischen Fähigkeiten und dem bösartigem Wesen sind diese Bienen die allerniedlichsten!"|Jadedcat
+
 magicbees.speciesRSAFluxed=Fluxierend
 magicbees.speciesRSAFluxed.description="Wie auch immer das möglich ist..."|Völlig irrelevanter Kommentar
-magicbees.speciesBMBloody=Blutig
-magicbees.speciesBMBloody.description=Erfüllt von der Macht des Blutes streben sie nach weiterer Macht.|Apinomicon
-magicbees.speciesBMBound=Gebunden
-magicbees.speciesBMBound.description="Mir gefällt der Name dieser Bienen nicht sonderlich..."|WayOfFlowingTime, Blutmagier
 magicbees.speciesBotRooted=Verwurzelt
 magicbees.speciesBotRooted.description="Diese Bienen kann man problemlos quadrieren"|MysteriousAges mit schlechten Mathewitzen
 magicbees.speciesBotBotanic=Botanisch
@@ -477,6 +492,9 @@ magicbees.speciesBotAlfheim=Alheimrig
 magicbees.speciesBotAlfheim.description=Sie erinnern sich an ihre Zeit in Alfheim, sehnen sich nach einer Welt erfüllt von Mana und streben danach.|Apinomikon
 magicbees.speciesAESkystone=Himmelssteinern
 magicbees.speciesAESkystone.description=Geboren aus der Einheit von Himmel und Erde, zu Boden gefallen, von Flammen umgeben.|Apinomikon
+
+
+
 magicbees.species=
 magicbees.species.description=
 
@@ -575,6 +593,8 @@ classification.essential=Essentiell
 classification.essential.description=Diese Bienen haben eine erhöhte Affinität zu aspektischer Magie.|Apinomikon
 classification.botanical=Botanisch
 classification.botanical.description=Eine seltsame Variante gewöhnlicher Bienen, sie scheinen eine versärkte Affinität zu Blumen zu haben|Apinomikon
+classification.alloyed=Legierung
+classification.alloyed.description=
 
 tc.aspect.tempus=Zeit, Moment, Ewigkeit
 tc.research_category.MAGICBEES=Apimantik
