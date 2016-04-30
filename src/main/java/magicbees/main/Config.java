@@ -387,7 +387,7 @@ public class Config
 			item = type.toString().toLowerCase();
 			item = Character.toString(item.charAt(0)).toUpperCase() + item.substring(1);
 			if (OreDictionary.getOres("ingot" + item).size() <= 0) {
-				if (OreDictionary.getOres("shard" + item).size() <= 0) {
+				if (OreDictionary.getOres("nugget" + item).size() <= 0) {
 					LogHelper.info("Disabled nugget " + type.toString());
 					type.setInactive();
 				}
@@ -411,9 +411,9 @@ public class Config
 		OreDictionary.registerOre("nuggetTin", nuggets.getStackForType(NuggetType.TIN));
 		OreDictionary.registerOre("nuggetSilver", nuggets.getStackForType(NuggetType.SILVER));
 		OreDictionary.registerOre("nuggetLead", nuggets.getStackForType(NuggetType.LEAD));
-		OreDictionary.registerOre("shardDiamond", nuggets.getStackForType(NuggetType.DIAMOND));
-		OreDictionary.registerOre("shardEmerald", nuggets.getStackForType(NuggetType.EMERALD));
-		OreDictionary.registerOre("shardApatite", nuggets.getStackForType(NuggetType.APATITE));
+		OreDictionary.registerOre("nuggetDiamond", nuggets.getStackForType(NuggetType.DIAMOND));
+		OreDictionary.registerOre("nuggetEmerald", nuggets.getStackForType(NuggetType.EMERALD));
+		OreDictionary.registerOre("nuggetApatite", nuggets.getStackForType(NuggetType.APATITE));
 	}
 	
 	private void setupBotaniaItems() {

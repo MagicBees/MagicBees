@@ -319,12 +319,12 @@ public class CraftingManager {
 
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.diamond),
 				"xxx", "xxx", "xxx",
-				'x', "shardDiamond"
+				'x', "nuggetDiamond"
 		));
 
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.emerald),
 				"xxx", "xxx", "xxx",
-				'x', "shardEmerald"
+				'x', "nuggetEmerald"
 		));
 
 		GameRegistry.addRecipe(new ShapedOreRecipe(ItemInterface.getItemStack("apatite"),
