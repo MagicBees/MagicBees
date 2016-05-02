@@ -71,8 +71,8 @@ public class BlockEffectJar extends BlockContainer
 	@Override
 	public void breakBlock(World world, int x, int y, int z, Block block, int meta)
 	{
-		super.breakBlock(world, x, y, z, block, meta);
 		this.dropInventory(world, x, y, z);
+		super.breakBlock(world, x, y, z, block, meta);
 	}
 
 	private void dropInventory(World world, int x, int y, int z)
