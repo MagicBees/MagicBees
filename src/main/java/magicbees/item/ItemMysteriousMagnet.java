@@ -204,7 +204,8 @@ public class ItemMysteriousMagnet extends Item implements IBauble {
 					
 					if (world.rand.nextFloat() < 0.2f) {
 						float pitch = 0.85f - world.rand.nextFloat() * 3f / 10f;
-						world.playSoundEffect(e.posX, e.posY, e.posZ, "mob.endermen.portal", 0.6f, pitch);
+						if(!Config.disableMagnetSound)
+							world.playSoundEffect(e.posX, e.posY, e.posZ, "mob.endermen.portal", 0.6f, pitch);
 					}
 				}
 			}

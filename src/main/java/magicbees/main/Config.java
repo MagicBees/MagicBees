@@ -66,6 +66,7 @@ import forestry.api.storage.EnumBackpackType;
 public class Config
 {
 	public static final String CATEGORY_GENERAL = "general";
+	public static final String CATEGORY_CLIENT = "client";
 	public static final String CATEGORY_DEBUG = "debug";
 	public static final String CATEGORY_MODULES = "modules";
 	public static final String CATEGORY_BOTANIA = "botaniaPlugin";
@@ -122,6 +123,8 @@ public class Config
 	public static ItemNugget nuggets;
 	public static ItemMoonDial moonDial;
 	public static ItemMysteriousMagnet magnet;
+	
+	public static boolean disableMagnetSound;
 	
 	//----- Liquid Capsules --------------------
 	public static ItemCapsule magicCapsule;
@@ -331,6 +334,10 @@ public class Config
 		p = configuration.get(CATEGORY_GENERAL, "aromaticLumpSwarmerRate", 95);
 		p.comment = "Aromatic lump swarmer rate. Final value is X/1000. 0 will disable, values outside of [0,1000] will be clamped to range. Default: 95";
 		aromaticLumpSwarmerRate = p.getInt();
+		
+		p = configuration.get(CATEGORY_CLIENT, "disableMagnetSound", false);
+		p.comment = "set to true to disable the magnet from making noise on item pickup";
+		disableMagnetSound = p.getBoolean();
 	}
 
 	private void setupEffectJar() {
