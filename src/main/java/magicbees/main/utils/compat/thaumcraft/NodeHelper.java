@@ -110,7 +110,7 @@ public class NodeHelper {
 							aspectToAdd = getWeightedRandomAspect(world.rand);
 							++rollAttempts;
 						}
-						while (aspectsBase.getAmount(aspectToAdd) < 255 && 20 < rollAttempts);
+						while (aspectsBase.getAmount(aspectToAdd) < 255 && rollAttempts < 20);
 						
 						if (20 <= rollAttempts) {
 							return false;
