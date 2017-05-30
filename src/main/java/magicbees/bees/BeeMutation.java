@@ -297,9 +297,19 @@ public class BeeMutation {
 			beeMutationFactory.createMutation(Allele.getBaseSpecies("Frugal"), BeeSpecies.MUTABLE.getSpecies(), BeeSpecies.EE_MINIUM.getGenome(), 8);
 		}
 		
-		if (RedstoneArsenalHelper.isActive()) {
-			beeMutationFactory.createMutation(BeeSpecies.TE_ELECTRUM.getSpecies(), BeeSpecies.TE_DESTABILIZED.getSpecies(), BeeSpecies.RSA_FLUXED.getGenome(), 10)
-					.requireResource("blockElectrumFlux");
+		if (ThermalModsHelper.isActive()) {
+			baseB = BeeSpecies.TE_DESTABILIZED.getSpecies();
+		} else if (ThaumcraftHelper.isActive()){
+			baseB = BeeSpecies.TC_ORDER.getSpecies();
+		} else {
+			BeeSpecies.RSA_FLUXED.setInactive();
+		}
+		if (BeeSpecies.RSA_FLUXED.isActive()) {
+			baseA = (BeeSpecies.TE_ELECTRUM.isActive()) ? BeeSpecies.TE_ELECTRUM.getSpecies() : BeeSpecies.GOLD.getSpecies();
+			mutation = beeMutationFactory.createMutation(baseA, baseB , BeeSpecies.RSA_FLUXED.getGenome(), 10);
+			if(RedstoneArsenalHelper.isActive()){
+				mutation.requireResource("blockElectrumFlux");
+			}
 		}
 		
 		if (ThermalModsHelper.isActive()) {
