@@ -283,7 +283,7 @@ magicbees.speciesSpidery=蜘蛛
 magicbees.speciesSpidery.description=蜘蛛蜂; 嗯.做蜘蛛蜂该做的事情.|佚名
 magicbees.speciesSmouldering=闷烧
 magicbees.speciesSmouldering.description=永恒之焰中潜伏的蜜蜂格外耀眼.|Apinomicon
-magicbees.speciesBigBad=Big Bad
+magicbees.speciesBigBad=极恶
 magicbees.speciesBigBad.description="谁会怕BigBadChris?"|Pahimar的临终遗言
 magicbees.speciesTCBrainy=怒尸
 magicbees.speciesTCBrainy.description=蜂巢变得恶臭难闻,但这些家伙变得好聪明！|Apinomicon
@@ -544,13 +544,13 @@ binniecore.allele.magicbees.effectCurative.desc=随机生成狼
 magicbees.effectManaDrainer=漩涡
 binniecore.allele.magicbees.effectManaDrainer.desc=随机生成魔力爬行者
 magicbees.effectAMWisp=魂灵
-binniecore.allele.magicbees.effectAMWisp.desc=随机生成spirits
+binniecore.allele.magicbees.effectAMWisp.desc=随机生成灵魂体
 magicbees.effectTEBlizzy=暴雪
 binniecore.allele.magicbees.effectTEBlizzy.desc=随机生成暴雪怪
-magicbees.effectTEBlitz=Blitzy
-binniecore.allele.magicbees.effectTEBlitz.desc=随机生成Blitzes
-magicbees.effectTEBasalz=Basalzy
-binniecore.allele.magicbees.effectTEBasalz.desc=随机生成Basalzes
+magicbees.effectTEBlitz=狂风
+binniecore.allele.magicbees.effectTEBlitz.desc=随机生成狂风人
+magicbees.effectTEBasalz=岩石
+binniecore.allele.magicbees.effectTEBasalz.desc=随机生成岩石人
 magicbees.effectDreaming=梦乡
 binniecore.allele.magicbees.effectDreaming.desc=将普通的材料转化为植物学中对应的材料.
 magicbees.effectPorcine=Porcine
@@ -624,7 +624,7 @@ tc.research_page.MB_LoreFragment.1=在蜜蜂繁育的实验中,你或许会遇�
 
 tc.research_name.MB_FrameMagic=魔法框架
 tc.research_text.MB_FrameMagic=[MB] 将魔法融入养蜂
-tc.research_page.MB_FrameMagic.1=这魔法框架是你平时所使用的普通的未处理框架的升级版. 制作工艺依旧十分简单,但是它却有着三倍于普通未处理框架的使用时长. 而且,不像其它那些拒绝魔力注入的框架,魔法框架所有的可附魔特性使其可以与一些特殊源质一起使用,并作用于蜂箱上.
+tc.research_page.MB_FrameMagic=这魔法框架是你平时所使用的普通的未处理框架的升级版. 制作工艺依旧十分简单,但是它却有着三倍于普通未处理框架的使用时长. 而且,不像其它那些拒绝魔力注入的框架,魔法框架所有的可附魔特性使其可以与一些特殊源质一起使用,并作用于蜂箱上.
 
 tc.research_name.MB_Scoop=奥法捕蜂网
 tc.research_text.MB_Scoop=[MB] 轻拿轻放.
@@ -640,7 +640,7 @@ tc.research_page.MB_EssenceLife.1=由魔力所创造,这种源质在暴露在蜜
 
 tc.research_name.MB_EssenceDeath=暗影之墓源质
 tc.research_text.MB_EssenceDeath=[MB] 离地六英尺不足.
-tc.reseacrh_page.MB_EssenceDeath.1=暗影之墓源质引导着无数游荡于这个世界的..."自然"生物,走向死亡: 僵尸, 骷髅, 诸如此类. 暴露于这种能量下的蜜蜂会越来越迟缓, 寿命也会随之缩短. 一部分神秘养蜂家认为使用浸有此种源质的框架是一种十分残忍的行为,然而, 也有其他观点认为这是常规养蜂中不可避免的一部分, 有时还可以让那些蜜蜂们在它们有限的生命周期里紧张工作起来. <BR> 神秘养蜂学安全指南章程中建议使用念力或者特别长的钳子来拿取此框架.
+tc.research_page.MB_EssenceDeath.1=暗影之墓源质引导着无数游荡于这个世界的..."自然"生物,走向死亡: 僵尸, 骷髅, 诸如此类. 暴露于这种能量下的蜜蜂会越来越迟缓, 寿命也会随之缩短. 一部分神秘养蜂家认为使用浸有此种源质的框架是一种十分残忍的行为,然而, 也有其他观点认为这是常规养蜂中不可避免的一部分, 有时还可以让那些蜜蜂们在它们有限的生命周期里紧张工作起来. <BR> 神秘养蜂学安全指南章程中建议使用念力或者特别长的钳子来拿取此框架.
 
 tc.research_name.MB_EssenceArmor=恒久不灭源质
 tc.research_text.MB_EssenceArmor=[MB] 你胶水上的橡胶
